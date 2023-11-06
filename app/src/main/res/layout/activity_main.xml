@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvValeur"
+        android:id="@+id/TVAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Votre Age : "
@@ -56,7 +56,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
         <RadioButton
-            android:id="@+id/rbtOui"
+            android:id="@+id/BtnOui"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -65,7 +65,7 @@
             android:textColor="@color/black"
             android:textSize="18sp"/>
         <RadioButton
-            android:id="@+id/rbtNon"
+            android:id="@+id/BtnNon"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -89,9 +89,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:backgroundTint="@color/gray"
+        android:backgroundTint="@color/red"
         android:text="CONSULTER"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:onClick="calculer"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
